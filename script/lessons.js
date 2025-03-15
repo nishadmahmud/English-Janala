@@ -42,7 +42,7 @@ function showDetails(details) {
 
     <div class="space-y-2">
         <h3 class="text-base hind font-semibold">সমার্থক শব্দ গুলো</h3>
-        <div id="synonyms" class="flex gap-3">
+        <div id="synonyms" class="flex flex-wrap gap-3">
             ${
               details.synonyms.length
                 ? details.synonyms
