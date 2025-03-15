@@ -32,7 +32,7 @@ function showDetails(details) {
         <h3 class="text-base font-semibold">Meaning</h3>
         <h4 class="bangla text-base font-medium">${
           details.meaning || "অর্থ পাওয়া যায়নি"
-        } / ${details.pronunciation}</h4>
+        }</h4>
     </div>
 
     <div class="space-y-2">
