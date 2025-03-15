@@ -6,10 +6,24 @@
     <title>English Janala</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
     <!-- Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -58,6 +72,12 @@
         padding-top: 120px;
         margin-top: -0px;
       }
+      @media (max-width: 800px) {
+        #learnContainer {
+          padding-top: 60px;
+          margin-top: 0px;
+        }
+      }
       @supports (backdrop-filter: blur(12px)) {
         .nav-blur {
           backdrop-filter: blur(20px);
@@ -74,7 +94,9 @@
   <body class="poppins min-h-screen">
     <header id="nav" class="sticky top-0 z-1 hidden">
       <nav class="bg-gray-100/30 border border-[#C6BDBD] nav-blur">
-        <div class="w-11/12 m-auto py-5 flex flex-col md:flex-row justify-between md:gap-0 gap-2 items-center">
+        <div
+          class="w-11/12 m-auto py-5 flex flex-col md:flex-row justify-between md:gap-0 gap-2 items-center"
+        >
           <div class="flex items-center gap-1">
             <h4 class="text-sm font-semibold">English</h4>
             <img src="assets/logo.png" class="w-7" />
@@ -103,7 +125,10 @@
 
     <main class="w-11/12 m-auto">
       <!-- hero -->
-      <section id="hero" class="mt-8 flex flex-col md:flex-row gap-3 md:gap-40 justify-around items-start md:items-center">
+      <section
+        id="hero"
+        class="mt-8 flex flex-col md:flex-row gap-3 md:gap-40 justify-around items-start md:items-center"
+      >
         <div class="flex flex-col w-3/4 md:w-3/5">
           <h1 class="text-4xl font-bold mb-5">
             <span class="text-[#00BCFF]">English</span> is Easy!!
@@ -113,7 +138,11 @@
             আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
             অন্য একটি Level এ
           </p>
-          <form id="loginForm" action="" class="flex flex-col w-3/4 md:w-1/2 gap-4 mt-6">
+          <form
+            id="loginForm"
+            action=""
+            class="flex flex-col w-3/4 md:w-1/2 gap-4 mt-6"
+          >
             <input
               type="text"
               id="name"
@@ -126,7 +155,10 @@
               placeholder="Enter Password (123456)"
               class="text-xs p-2 rounded-sm border-1 border-[#18181B33]"
             />
-            <button type="submit" class="btn btn-primary text-xs w-3/5 md:w-1/2 hover:text-[#422AD5] hover:bg-white border border-[#422AD5]">
+            <button
+              type="submit"
+              class="btn btn-primary text-xs w-3/5 md:w-1/2 hover:text-[#422AD5] hover:bg-white border border-[#422AD5]"
+            >
               Get Started
             </button>
           </form>
@@ -137,11 +169,14 @@
       </section>
 
       <!-- Learn section -->
-      <section id="learnContainer" class="my-32 hidden">
+      <section id="learnContainer" class="sm:my-2 md:my-32 hidden">
         <h2 class="text-center text-2xl font-bold mb-6">
           <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
         </h2>
-        <div id="btn-container" class="flex justify-center gap-4 mb-7"></div>
+        <div
+          id="btn-container"
+          class="flex flex-wrap md:flex-row justify-center gap-4 mb-7"
+        ></div>
 
         <div id="lessonContainer" class="bg-[#F8F8F8] rounded-2xl p-5">
           <div id="loading" class="text-center p-20 hidden">
@@ -171,7 +206,7 @@
               <h4 class="text-2xl font-bold">নেক্সট Lesson এ যান</h4>
             </div>
             <!-- lesson cards -->
-            <div id="lessonCards" class="grid grid-cols-3 gap-5"></div>
+            <div id="lessonCards" class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5"></div>
           </div>
         </div>
       </section>
